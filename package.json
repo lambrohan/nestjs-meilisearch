@@ -12,6 +12,7 @@
 	"files": [
 		"lib"
 	],
+	"repository": "https://github.com/lambrohan/nestjs-meilisearch",
 	"author": {
 		"name": "Rohan Lamb",
 		"url": "https://github.com/lambrohan"
