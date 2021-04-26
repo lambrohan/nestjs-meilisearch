@@ -1,6 +1,6 @@
 import { DynamicModule, Global, Module } from '@nestjs/common'
 import { Config } from 'meilisearch'
-import { createMeiliProvider } from 'src/providers'
+import { createMeiliProvider } from './providers'
 import { MeiliSearchService } from './services'
 
 @Global()

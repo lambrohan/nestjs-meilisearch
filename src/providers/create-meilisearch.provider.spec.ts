@@ -1,4 +1,4 @@
-import { meiliToken } from 'src/constants'
+import { meiliToken } from '../constants'
 import { createMeiliProvider } from './create-meilisearch.provider'
 
 describe('when called', () => {

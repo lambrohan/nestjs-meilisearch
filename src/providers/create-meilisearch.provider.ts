@@ -1,4 +1,4 @@
-import { meiliToken } from 'src/constants'
+import { meiliToken } from '../constants'
 import { MeiliSearch, Config } from 'meilisearch'
 export function createMeiliProvider(options: Config) {
 	if (!options?.host) {

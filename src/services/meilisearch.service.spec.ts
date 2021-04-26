@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { MeiliSearchModule } from 'src/meilisearch.module'
+import { MeiliSearchModule } from '../index'
 import { MeiliSearchService } from './index'
 
 describe('MeiliSearchService', () => {
