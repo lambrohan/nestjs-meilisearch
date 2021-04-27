@@ -1,7 +1,7 @@
 {
 	"name": "nestjs-meilisearch",
 	"version": "2.0.1",
-	"description": "Meilisearch integration for nestjs",
+	"description": "Meilisearch integration for nestjs.",
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
 	"scripts": {
@@ -13,6 +13,10 @@
 		"lib"
 	],
 	"repository": "https://github.com/lambrohan/nestjs-meilisearch",
+	"keywords": [
+		"nestjs",
+		"meilisearch"
+	],
 	"author": {
 		"name": "Rohan Lamb",
 		"url": "https://github.com/lambrohan"
