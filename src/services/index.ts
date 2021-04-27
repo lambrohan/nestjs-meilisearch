@@ -1,1 +1,1 @@
-export * from './meilisearch.service'
+export * from './meilisearch.service';

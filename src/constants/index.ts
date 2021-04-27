@@ -1,1 +1,1 @@
-export const meiliToken = 'MeiliToken'
+export const meiliToken = 'MeiliToken';

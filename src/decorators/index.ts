@@ -1,1 +1,1 @@
-export * from './inject-meilisearch.decorator'
+export * from './inject-meilisearch.decorator';

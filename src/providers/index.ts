@@ -1,1 +1,1 @@
-export * from './create-meilisearch.provider'
+export * from './create-meilisearch.provider';

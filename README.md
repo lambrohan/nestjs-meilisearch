@@ -32,7 +32,7 @@ use `@InjectMeiliSearch()` decorator in any injectables to get a `MeiliSearch` c
 ```typescript
 import { Injectable } from '@nestjs/common';
 import { InjectMeiliSearch } from 'nestjs-meilisearch';
-import { MeiliSearch } from 'meilisearch'
+import { MeiliSearch } from 'meilisearch';
 @Injectable()
 export class TestService {
   public constructor(
