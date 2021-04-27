@@ -2,6 +2,8 @@ executors:
   node:
     docker:
       - image: circleci/node:12.19.0
+      - image: getmeili/meilisearch
+        environment: MEILI_MASTER_KEY:12131211
     working_directory: ~/app
 jobs:
   build:
@@ -35,7 +37,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - 2c:3d:60:ad:08:a8:6f:67:95:09:48:24:46:58:ed:f1
+            - 3b:3e:89:92:c7:25:24:46:36:05:a4:40:cc:e5:e0:83
       - run:
           command: git config --global user.email "$USER_EMAIL"
           name: Setup git author email address
