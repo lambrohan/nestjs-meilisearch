@@ -3,7 +3,8 @@ executors:
     docker:
       - image: circleci/node:12.19.0
       - image: getmeili/meilisearch
-        environment: MEILI_MASTER_KEY:12131211
+        environment:
+          MEILI_MASTER_KEY: 12131211
     working_directory: ~/app
 jobs:
   build:
