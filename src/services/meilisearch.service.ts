@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 import { Document, EnqueuedUpdate, MeiliSearch } from 'meilisearch'
-import { InjectMeiliSearch } from 'src/decorators'
+import { InjectMeiliSearch } from '../decorators'
 
 @Injectable()
 export class MeiliSearchService {
