@@ -5,7 +5,7 @@ import {
   MeiliModuleAsyncOptions,
   MeiliModuleOptions,
   MeiliModuleOptionsFactory,
-} from 'src/constants/meili-module-options';
+} from '../interfaces';
 
 export function createConnectionFactory(options: MeiliModuleOptions) {
   return new MeiliSearch(options);

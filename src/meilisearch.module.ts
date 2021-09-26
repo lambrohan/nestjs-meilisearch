@@ -1,12 +1,8 @@
 import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
-import { createConnectionFactory, createAsyncProviders } from 'src/providers';
-import {
-  MEILI_CLIENT,
-  MEILI_MODULE_OPTIONS,
-  MeiliModuleAsyncOptions,
-  MeiliModuleOptions,
-} from 'src/constants';
+import { createConnectionFactory, createAsyncProviders } from './providers';
+import { MEILI_CLIENT, MEILI_MODULE_OPTIONS } from './constants';
 import { MeiliSearchService } from './services';
+import { MeiliModuleAsyncOptions, MeiliModuleOptions } from './interfaces';
 
 @Global()
 @Module({})

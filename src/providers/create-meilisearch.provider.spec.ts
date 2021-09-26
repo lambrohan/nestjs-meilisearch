@@ -1,5 +1,4 @@
 import { createConnectionFactory } from '../providers';
-import { MEILI_CLIENT } from '../constants';
 import MeiliSearch from 'meilisearch';
 
 describe('when called', () => {

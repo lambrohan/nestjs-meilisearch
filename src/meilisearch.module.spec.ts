@@ -1,6 +1,6 @@
 import { DynamicModule } from '@nestjs/common';
-import { MEILI_MODULE_OPTIONS, MEILI_CLIENT } from './constants';
-import { MeiliSearchModule } from 'src/meilisearch.module';
+import { MEILI_MODULE_OPTIONS } from './constants';
+import { MeiliSearchModule } from './meilisearch.module';
 
 describe('MeilisearchModule', () => {
   it('should validate that module exists', async () => {
