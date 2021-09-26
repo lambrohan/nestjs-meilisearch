@@ -13,7 +13,6 @@ describe('MeiliSearchService', () => {
           apiKey: '12131211',
         }),
       ],
-      providers: [MeiliSearchService],
     }).compile();
     service = module.get<MeiliSearchService>(MeiliSearchService);
   });
@@ -31,6 +30,14 @@ describe('MeiliSearchService', () => {
     } catch (error) {
       expect(error).toThrowError(error);
     }
+  });
+
+  it('should read the added document to jest index', async () => {
+    try {
+      const res = await service.getDocuments('jest');
+      expect(res[0].id).toEqual('1');
+      expect(res[0].message).toEqual('test');
+    } catch (error) {}
   });
 
   it('should update the test document from jest index', async () => {

@@ -1,6 +1,6 @@
 import { Inject } from '@nestjs/common';
-import { meiliToken } from '../constants';
+import { MEILI_CLIENT } from '../constants';
 
 export function InjectMeiliSearch() {
-  return Inject(meiliToken);
+  return Inject(MEILI_CLIENT);
 }

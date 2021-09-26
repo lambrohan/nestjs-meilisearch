@@ -15,6 +15,10 @@ export class MeiliSearchService {
     return await this.meiliSearchClient.index(index).addDocuments(documents);
   }
 
+  async getDocuments(index: string): Promise<any> {
+    return await (await this.meiliSearchClient.getIndex(index)).getDocuments();
+  }
+
   async updateDocuments(
     index: string,
     documents: Array<Document<any>>,

@@ -10,7 +10,7 @@ yarn add nestjs-meilisearch
 
 ## Getting Started
 
-The simplest way to use `nestjs-meilisearch` is to use `MeiliSearchModule.forRoot`
+The simplest way to use `nestjs-meilisearch` is to use `MeiliSearchModule.forRoot` or `MeiliSearchModule.forRootAsync`
 
 ```typescript
 import { Module } from '@nestjs-common';
@@ -23,6 +23,14 @@ import { MeiliSearchModule } from 'nestjs-meilisearch';
       apiKey: 'masterKey',
     }),
   ],
+
+  // or async
+  MeiliSearchModule.forRootAsync({
+    useFactory: () => ({
+      host: 'http://127.0.0.1:7700',
+      apiKey: 'masterKey',
+    }),
+  }),
 })
 export class AppModule {}
 ```
