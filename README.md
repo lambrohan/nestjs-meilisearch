@@ -4,8 +4,10 @@ This package is a simple wrapper around [meilisearch-js](https://github.com/meil
 
 ## Installation
 
+This package requires `meilisearch` dependency to work properly.
+
 ```bash
-yarn add nestjs-meilisearch
+yarn add nestjs-meilisearch meilisearch
 ```
 
 ## Getting Started
