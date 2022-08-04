@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Document, EnqueuedUpdate, MeiliSearch } from 'meilisearch';
+import { Document, EnqueuedTask, MeiliSearch } from 'meilisearch';
 import { InjectMeiliSearch } from '../decorators';
 
 @Injectable()
@@ -11,7 +11,7 @@ export class MeiliSearchService {
   async addDocuments(
     index: string,
     documents: Array<Document<any>>,
-  ): Promise<EnqueuedUpdate> {
+  ): Promise<EnqueuedTask> {
     return await this.meiliSearchClient.index(index).addDocuments(documents);
   }
 
@@ -22,11 +22,11 @@ export class MeiliSearchService {
   async updateDocuments(
     index: string,
     documents: Array<Document<any>>,
-  ): Promise<EnqueuedUpdate> {
+  ): Promise<EnqueuedTask> {
     return await this.meiliSearchClient.index(index).updateDocuments(documents);
   }
 
-  async deleteDocument(index: string, docId: string): Promise<EnqueuedUpdate> {
+  async deleteDocument(index: string, docId: string): Promise<EnqueuedTask> {
     return await this.meiliSearchClient.index(index).deleteDocument(docId);
   }
 }

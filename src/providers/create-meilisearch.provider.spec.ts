@@ -9,7 +9,7 @@ describe('when called', () => {
     });
     expect(connectionProvider).toBeDefined();
     expect(connectionProvider).toBeInstanceOf(MeiliSearch);
-    const version = connectionProvider.version();
+    const version = connectionProvider.getVersion();
     expect(version).toBeDefined();
   });
 });

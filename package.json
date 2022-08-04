@@ -27,35 +27,36 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
-    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
-    "meilisearch": ">=0.10.0 <1.0.0",
+    "@nestjs/common": "^8.0.0 || ^9.0.0",
+    "meilisearch": ">=0.27.0 <1.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.0.0 || ^7.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.7",
-    "@nestjs/core": "^8.0.7",
-    "@nestjs/testing": "^8.0.7",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.1",
-    "@typescript-eslint/eslint-plugin": "^4.31.2",
-    "@typescript-eslint/parser": "^4.31.2",
+    "@nestjs/common": "^9.0.8",
+    "@nestjs/core": "^9.0.8",
+    "@nestjs/testing": "^9.0.8",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.3",
+    "@types/yargs-parser": "^21.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
     "codecov": "^3.8.3",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.2.2",
-    "meilisearch": "^0.20.2",
-    "prettier": "^2.4.1",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "meilisearch": "^0.27.0",
+    "prettier": "^2.7.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.3.0",
-    "supertest": "^6.1.6",
-    "ts-jest": "^27.0.5",
-    "ts-loader": "^9.2.6",
-    "ts-node": "^10.2.1",
-    "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.4.3"
+    "rxjs": "^7.5.6",
+    "supertest": "^6.2.4",
+    "ts-jest": "^28.0.7",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -76,5 +77,6 @@
     "moduleNameMapper": {
       "^src/(.*)$": "<rootDir>/$1"
     }
-  }
+  },
+  "dependencies": {}
 }
