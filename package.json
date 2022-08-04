@@ -1,6 +1,6 @@
 {
   "name": "nestjs-meilisearch",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Meilisearch integration for nestjs.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
