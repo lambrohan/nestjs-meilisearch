@@ -18,7 +18,13 @@ jobs:
           - 7700:7700
         env:
           MEILI_MASTER_KEY: 12131211
+        
     steps:
+      - uses: nev7n/wait_for_response@v1
+        with:
+          url: 'http://meilisearch:7700'
+          responseCode: 200
+          interval: 500
       - uses: actions/checkout@v3
       - name: Use Node.js 
         uses: actions/setup-node@v3
