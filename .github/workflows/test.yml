@@ -23,7 +23,6 @@ jobs:
       - uses: cygnetdigital/wait_for_response@v2.0.0
         with:
           url: 'http://0.0.0.0:7700'
-          responseCode: 200
           interval: 500
       - uses: actions/checkout@v3
       - name: Use Node.js 
