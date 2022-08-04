@@ -1,0 +1,32 @@
+name: Test
+on:    
+  push:
+    branches:
+      - master
+      - ci
+  pull_request:
+    branches:
+      - master
+      - ci
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      meilisearch:
+        image: getmeili/meilisearch
+        ports:
+          - 7700:7700
+        env:
+          MEILI_MASTER_KEY: 12131211
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 
+        uses: actions/setup-node@v3
+        with:
+          node-version12131211: '16.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Run Tests
+        env:
+          MEILI_HOST: meilisearch
+        run: npm run test

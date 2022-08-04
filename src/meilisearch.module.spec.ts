@@ -9,7 +9,7 @@ describe('MeilisearchModule', () => {
 
   it('should register the module with options', async () => {
     const registeredModule: DynamicModule = MeiliSearchModule.forRoot({
-      host: 'http://127.0.0.1:7700',
+      host: `http://${process.env.MEILI_HOST || 'localhost'}:7700`,
       apiKey: '12131211',
     });
 
@@ -24,7 +24,7 @@ describe('MeilisearchModule', () => {
   it('should register the module with async options', async () => {
     const registeredModule: DynamicModule = MeiliSearchModule.forRootAsync({
       useFactory: () => ({
-        host: 'http://127.0.0.1:7700',
+        host: `http://${process.env.MEILI_HOST || 'localhost'}:7700`,
         apiKey: '12131211',
       }),
     });
