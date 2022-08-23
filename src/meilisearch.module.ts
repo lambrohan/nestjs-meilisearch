@@ -15,11 +15,7 @@ export class MeiliSearchModule {
 
     const connectionProvider: Provider = {
       provide: MEILI_CLIENT,
-      useFactory: async () =>
-        await createConnectionFactory({
-          host: 'http://127.0.0.1:7700',
-          apiKey: '12131211',
-        }),
+      useFactory: async () => await createConnectionFactory(options),
     };
     return {
       module: MeiliSearchModule,
