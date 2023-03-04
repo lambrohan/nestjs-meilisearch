@@ -27,10 +27,10 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0",
+    "@nestjs/common": "^8.0.0 || ^9.3.9",
     "meilisearch": ">=0.31.1 <1.0.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.0.0 || ^7.0.0"
+    "rxjs": "^6.0.0 || ^7.8.0"
   },
   "devDependencies": {
     "@nestjs/common": "^9.3.9",
