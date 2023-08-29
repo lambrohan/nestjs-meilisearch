@@ -78,5 +78,8 @@
       "^src/(.*)$": "<rootDir>/$1"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "node": ">=16.6.0"
+  }
 }
