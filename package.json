@@ -83,7 +83,7 @@
     "node": ">=16.6.0"
   },
   "np": {
-    "yarn": true,
+    "yarn": false,
     "contents": "lib"
   }
 }
