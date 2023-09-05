@@ -81,5 +81,9 @@
   "dependencies": {},
   "engines": {
     "node": ">=16.6.0"
+  },
+  "np": {
+    "yarn": true,
+    "contents": "lib"
   }
 }
