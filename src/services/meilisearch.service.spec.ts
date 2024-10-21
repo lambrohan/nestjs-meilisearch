@@ -10,7 +10,7 @@ describe('MeiliSearchService', () => {
       imports: [
         MeiliSearchModule.forRoot({
           host: 'http://127.0.0.1:7700',
-          apiKey: '12131211',
+          apiKey: '123456',
         }),
       ],
     }).compile();
@@ -37,7 +37,7 @@ describe('MeiliSearchService', () => {
       const res = await service.getDocuments('jest');
       expect(res[0].id).toEqual('1');
       expect(res[0].message).toEqual('test');
-    } catch (error) {}
+    } catch (error) { }
   });
 
   it('should update the test document from jest index', async () => {
