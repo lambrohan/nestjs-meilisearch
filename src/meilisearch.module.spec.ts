@@ -10,7 +10,7 @@ describe('MeilisearchModule', () => {
   it('should register the module with options', async () => {
     const registeredModule: DynamicModule = MeiliSearchModule.forRoot({
       host: 'http://127.0.0.1:7700',
-      apiKey: '12131211',
+      apiKey: '123456',
     });
 
     expect(registeredModule).toBeDefined();
@@ -25,7 +25,7 @@ describe('MeilisearchModule', () => {
     const registeredModule: DynamicModule = MeiliSearchModule.forRootAsync({
       useFactory: () => ({
         host: 'http://127.0.0.1:7700',
-        apiKey: '12131211',
+        apiKey: '123456',
       }),
     });
 

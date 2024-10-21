@@ -1,0 +1,39 @@
+name: Test
+
+on:
+  push:
+    branches: ['*']
+  pull_request:
+    branches: ['master']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Meilisearch
+        run: |
+          docker pull getmeili/meilisearch:latest
+          docker run -d --name meilisearch \
+            -p 7700:7700 \
+            -e MEILI_ENV='development' \
+            -e MEILI_MASTER_KEY='123456' \
+            getmeili/meilisearch:latest \
+            meilisearch --env="development" --master-key="123456" --no-analytics
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run tests
+        run: pnpm run test
