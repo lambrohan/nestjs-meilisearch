@@ -37,7 +37,8 @@ describe('MeiliSearchService', () => {
       const res = await service.getDocuments('jest');
       expect(res[0].id).toEqual('1');
       expect(res[0].message).toEqual('test');
-    } catch (error) { }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-empty
+    } catch (error) {}
   });
 
   it('should update the test document from jest index', async () => {
