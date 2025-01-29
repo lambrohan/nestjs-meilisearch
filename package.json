@@ -27,15 +27,16 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
-    "@nestjs/common": "^10.0.0",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
     "meilisearch": ">=0.31.1 <1.0.0",
     "reflect-metadata": "^0.1.13 || ^0.2.1",
     "rxjs": "^6.0.0 || ^7.8.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^10.0.0",
-    "@nestjs/core": "^10.0.0",
-    "@nestjs/testing": "^10.0.0",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.6",
     "@types/yargs-parser": "^21.0.0",
@@ -80,7 +81,7 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">=16.6.0"
+    "node": ">=20.0.0"
   },
   "np": {
     "yarn": false,
