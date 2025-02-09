@@ -37,18 +37,18 @@
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/testing": "^11.0.0",
+    "@eslint/js": "^9.19.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.6",
     "@types/yargs-parser": "^21.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.54.0",
     "codecov": "^3.8.3",
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
     "jest": "^29.4.3",
     "meilisearch": "^0.31.1",
-    "prettier": "^2.8.4",
+    "prettier": "^3.4.2",
     "reflect-metadata": "^0.2.1",
     "rimraf": "^4.3.0",
     "rxjs": "^7.8.0",
@@ -57,7 +57,8 @@
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.22.0"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -79,7 +80,6 @@
       "^src/(.*)$": "<rootDir>/$1"
     }
   },
-  "dependencies": {},
   "engines": {
     "node": ">=20.0.0"
   },
