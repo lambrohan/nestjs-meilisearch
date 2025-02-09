@@ -1,9 +1,10 @@
 {
   "name": "nestjs-meilisearch",
-  "version": "2.1.8",
+  "version": "3.0.0",
   "description": "Meilisearch integration for nestjs.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "rimraf lib && tsc -p tsconfig.build.json",
